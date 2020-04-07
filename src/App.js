@@ -4,6 +4,8 @@ import HelloWorld from "./Hello";
 import Counter from "./counter/Counter";
 import React, { Component } from "react";
 import Base from "./redux/Base";
+import ReactStateHooks from "./hooks/ReactStateHooks";
+import ReactEffectHooks from "./hooks/ReactEffectHooks";
 
 export default class App extends Component {
   state = {
@@ -44,6 +46,11 @@ export default class App extends Component {
 
         <header className="App-header-2 m-1">
           <Base></Base>
+        </header>
+        <header className="App-header-2 m-1">
+          <ReactStateHooks></ReactStateHooks>
+          <br />
+          <ReactEffectHooks></ReactEffectHooks>
         </header>
       </div>
     );

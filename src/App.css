@@ -32,6 +32,13 @@
   flex-grow: 1; /*  this fill up the space. */
 }
 
+.App-header-3 {
+  background-color: #8aabec;
+  min-height: 100vh;
+  flex-grow: 1; /*  this fill up the space. */
+  align-items: stretch;
+}
+
 .reduxBase {
   margin: auto;
 }

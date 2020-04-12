@@ -8,11 +8,12 @@ export default function ReactEffectHooks() {
   useEffect(() => {
     document.title = title;
     console.log("set title", title);
-  }, [title]);
+  }, [title]); // [title] - specifying the variables that are 'effect'ive
 
   return (
     <div>
-      <input value={title} onChange={e => setTitle(e.target.value)} />
+      <br></br>
+      <input value={title} onChange={e => setTitle(e.target.value)} /> <br></br>
       <input value={number} onChange={e => setNumber(e.target.value)} />
     </div>
   );

@@ -6,6 +6,7 @@ import React, { Component } from "react";
 import Base from "./redux/Base";
 import ReactStateHooks from "./hooks/ReactStateHooks";
 import ReactEffectHooks from "./hooks/ReactEffectHooks";
+import ReactUseReducer from "./hooks/ReactUseReducer";
 
 export default class App extends Component {
   state = {
@@ -25,17 +26,7 @@ export default class App extends Component {
       <div className="App">
         <header className="App-header ">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <span>Class Components </span>
           <HelloWorld />
           <div>
             {this.state.counters.map(c => (
@@ -47,10 +38,10 @@ export default class App extends Component {
         <header className="App-header-2 m-1">
           <Base></Base>
         </header>
-        <header className="App-header-2 m-1">
-          <ReactStateHooks></ReactStateHooks>
-          <br />
+        <header className="App-header-3 m-1 mp-2">
+          <ReactStateHooks className="mp-2"></ReactStateHooks>
           <ReactEffectHooks></ReactEffectHooks>
+          <ReactUseReducer></ReactUseReducer>
         </header>
       </div>
     );
